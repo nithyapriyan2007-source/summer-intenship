@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spotify Dashboard Clone</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    height:100vh;
+    background:#121212;
+    color:white;
+}
+
+/* Sidebar */
+.sidebar{
+    width:220px;
+    background:#000;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#1DB954;
+    margin-bottom:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:10px 0;
+    cursor:pointer;
+}
+
+/* Main Content */
+.main{
+    flex:1;
+    padding:20px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+/* Song Cards */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.card{
+    width:180px;
+    background:#282828;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card button{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    background:#1DB954;
+    color:white;
+    border-radius:5px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .cards{
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Spotify</h2>
+    <ul>
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>🎵 Library</li>
+    </ul>
+</div>
+
+<!-- Right Side -->
+<div class="main">
+
+    <h2>Trending Songs</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://picsum.photos/200?1">
+            <h4>Song 1</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?2">
+            <h4>Song 2</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?3">
+            <h4>Song 3</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?4">
+            <h4>Song 4</h4>
+            <button>Play</button>
+        </div>
+
+    </div>
+
+    <h2>Recently Played</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://picsum.photos/200?5">
+            <h4>Song 5</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?6">
+            <h4>Song 6</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?7">
+            <h4>Song 7</h4>
+            <button>Play</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?8">
+            <h4>Song 8</h4>
+            <button>Play</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

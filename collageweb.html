@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Navbar</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        nav{
+            background:#003366;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 30px;
+        }
+
+        .logo{
+            color:white;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        ul{
+            list-style:none;
+            display:flex;
+        }
+
+        ul li{
+            margin-left:20px;
+        }
+
+        ul li a{
+            color:white;
+            text-decoration:none;
+            padding:8px;
+        }
+
+        ul li a:hover{
+            background:orange;
+            border-radius:5px;
+        }
+
+        /* Mobile View */
+        @media(max-width:768px){
+            nav{
+                flex-direction:column;
+            }
+
+            ul{
+                flex-direction:column;
+                text-align:center;
+                margin-top:10px;
+            }
+
+            ul li{
+                margin:10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">My College</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Placements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <center>
+        <img src="don1.jpg"width="800" height="auto"><br>
+        <img src="download (6).jpg" width="800" height="auto"><br>
+    </center>
+</body>
+</html>
