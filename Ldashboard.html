@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="style9.css">
+<script src="script.js"></script>
+
+<style>
+
+.dashboard{
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+
+.profile{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.box{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.progress-bar{
+    width:100%;
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    width:80%;
+    height:100%;
+    background:#28a745;
+    color:white;
+    text-align:center;
+    line-height:25px;
+}
+
+.assignment{
+    background:white;
+    margin-top:30px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>LMS</h2>
+
+<ul>
+<li><a href="lms.html">Home</a></li>
+<li><a href="lscrept.html">Courses</a></li>
+<li><a href="Ldashboard.html">Dashboard</a></li>
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<div class="profile">
+
+<h1>Welcome, Student 👋</h1>
+
+<p>Track your learning progress here.</p>
+
+</div>
+
+<div class="cards">
+
+<div class="box">
+<h2>6</h2>
+<p>Courses Enrolled</p>
+</div>
+
+<div class="box">
+<h2>4</h2>
+<p>Completed Courses</p>
+</div>
+
+<div class="box">
+<h2>2</h2>
+<p>Pending Courses</p>
+</div>
+
+</div>
+
+<br>
+
+<h2>Your Progress</h2>
+
+<div class="progress-bar">
+
+<div class="progress">
+80%
+</div>
+
+</div>
+
+<div class="assignment">
+
+<h2>Upcoming Assignments</h2>
+
+<ul>
+
+<li>✔ HTML Project - 10 July</li>
+
+<li>✔ CSS Quiz - 12 July</li>
+
+<li>✔ JavaScript Assignment - 15 July</li>
+
+<li>✔ Mini LMS Project - 20 July</li>
+
+</ul>
+
+<br>
+
+<button onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
+
+</div>
+
+</div>
+<div style="width:300px;background:#ddd;border-radius:20px;">
+    <div id="progress"
+         style="width:0%;height:30px;background:#2563eb;color:white;
+         text-align:center;line-height:30px;border-radius:20px;">
+    </div>
+</div>
+
+<button onclick="loadProgress()">Load Progress</button>
+
+<footer>
+
+<p>© 2026 Learning Management System</p>
+
+</footer>
+
+</body>
+</html>
